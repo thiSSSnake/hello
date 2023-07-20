@@ -16,6 +16,7 @@ say-hello = "hello.scripts.say_hello:main"
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.0"
 ipython = "^8.14.0"
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
