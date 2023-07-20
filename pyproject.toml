@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "hello"
+version = "0.1.0"
+description = "Run command say-hello to show greet from system"
+authors = ["Andrey Emelianenko <ya.andrei201326@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+
+[tool.poetry.scripts]
+say-hello = "hello.scripts.say_hello:main"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+ipython = "^8.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
